@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+:root{
+    --primaryFont: 'IBM Plex Sans', sans-serif ;
+    --fontThin: 100;
+    --fontExtraL: 200;
+    --fontLight: 300;
+    --fontRegular: 400;
+    --fontMedium: 500;
+    --fontSemiBold: 600;
+    --fontBold: 700
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    font-family: var(--primaryFont);
+}
+
+body{
+    position: relative;
+}
+
+.main-wrapper{
+    width: 90%;
+    margin: 40px auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header-text{
+    color: #fff;    
+}
+
+.menu-wrapper{
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.menu-icon{
+    filter: invert();
+}
+
+.menu-wrapper span{
+    font-weight: var(--fontMedium);
+    font-size: .8rem;
+}
+
+.menu-close{
+    background-color: #000;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    display: none;
+}
+
+.close{
+    display: block;
+}
+
+.menu-close p{
+  margin: 30% 60px;
+  font-size: 3.2rem;
+  font-weight: var(--fontMedium);
+}
+
+.menu-close a{
+   color: #fff;
+   position: relative;
+}
+
+.menu-close a::after{
+    content: " ";
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 0;
+    z-index: 3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.6s ease-in;
+}
+
+.menu-close a:hover::after{
+    height: 50px;
+    width: 100%;
+}
+
+
+#logo{
+    width: 30px;
+    height: auto;
+    z-index: 10;
+}
+
+.logo-color{
+    filter: invert();
+}
+
+.banner{
+    margin: 10% auto;
+    text-align: center;
+    padding: 70px 70px 0;
+}
+
+.banner h3{
+    font-size: 5rem;
+    font-weight: var(--fontMedium);
+   margin: 0 auto;
+    max-width: 900px;
+}
+
+.banner p{
+    font-size: 1.3rem;
+    line-height: 2.3rem;
+    margin-top: 2rem;
+    font-weight: var(--fontExtraL);
+}
+
+.projects-showcase{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 3rem;
+    width: 100%;
+    margin: 8rem 0 12rem;
+}
+
+.project{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 3% 0;
+}
+
+.project img{
+    width: 100%;
+}
+
+.project-2{
+    position: relative;
+    top: -35px;
+}
+
+.project-3{
+    position: relative;
+    top: -55px;
+}
+
+.project-4{
+    position: relative;
+    top: 55px;
+}
+
+.project-5{
+    position: relative;
+    top: -55px;
+}
+
+.project-5 img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.project-8{
+    position: relative;
+    top: -55px;
+}
+
+.project-8 img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.project-tag{
+    color: #000;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 10px 0 5px;
+}
+
+.project-tag h3{
+    margin: 8px 0;font-size: 1.5rem;
+    font-weight: var(--fontMedium);
+}
+
+.project-tag p{
+    margin: 5px 0;
+    font-size: .8rem;
+    font-weight: var(--fontLight);
+ }
+
+.about-us{
+    padding: 0 3rem;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+}
+
+.about-us h1{
+    font-weight: var(--fontMedium);
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-us p{
+    font-weight: var(--fontExtraL);
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+    padding: 5px 10px 10px 8rem ;
+    max-width: 1000px;
+}
+
+.about-us a{
+    color: #000;
+    position: relative;
+}
+
+.about-us a::after{
+    content: " ";
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 0;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.6s ease-in;
+}
+
+.about-us p a:hover::after{
+    height: 15px;
+    width: 100%;
+}
+
+#about-us-team{
+   margin: 40px 0;
+}
+
+.footer{
+    background-color: #000;
+    color: #fff;
+    padding: 6rem 6rem;
+}
+
+
+.footer h1{
+    font-weight: var(--fontMedium);
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.footer p{
+    font-weight: var(--fontExtraL);
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+    padding: 5px 10px 10px 8rem ;
+    max-width: 1000px;
+    margin-bottom: 5rem;
+}
+
+.footer a {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.footer a::after{
+    content: " ";
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 0;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.6s ease-in;
+}
+
+.footer a:hover::after{
+    height: 15px;
+    width: 100%;
+}
+
+.footer a:hover{
+    border: 0;
+}
+
+.footer span{
+    opacity: .3;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    font-weight: var(--fontExtraL);
+    font-size: .8rem;
+    align-items: center; 
+}
+
+.footer-links span{
+    color: #fff;
+    opacity: 1;
+}
+
+.social-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+}
+
+
+@media screen and (max-width: 500px) {
+
+    .banner{
+        padding: 10px;
+        margin-top: 5rem;
+    }
+    
+    .banner h3{
+        font-size: 3rem;
+    }
+
+    .projects-showcase{
+        flex-direction: row;
+        margin: 4rem 0 5rem;
+        padding: 0 1rem;
+    }
+
+    .project{
+        width: 100%;
+        margin: 2rem 0;
+    }
+
+    .project-2, .project-3, .project-4, .project-5, .project-8{
+        top: 0;
+    }
+
+    .about-us{
+        padding: 0 1rem;
+        margin-top: 1rem;
+    }
+
+    .about-us h1{
+       font-size: 2.2rem;
+    }
+
+
+    .about-us p{
+        padding: 0;
+    }
+
+    .about-us p a{
+        border-bottom: 1px solid #000;
+    }
+
+    .footer{
+        padding: 6rem 3rem 3.5rem;
+    }
+
+    .footer h1{
+        font-size: 2.2rem;
+    }
+
+    .footer p{
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .footer-links{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-links span, .social-links{
+        margin-top: 30px;
+    }
+
+    .social-links{
+        justify-content: left;
+    }
+
+    .social-links a{
+        margin-right: 50px;
+        border-bottom: 0;
+    }
+
+    .menu-close p{
+        margin: 14rem 20px 0;
+        font-size: 2.2rem;
+        line-height: 3.5rem;
+    }
+
+    .menu-close a{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+     }
+     
+     .menu-close a:hover::after{
+         height: 20px;
+         width: 100%;
+     }
+}
+
